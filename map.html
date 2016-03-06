@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./map.css">
+    <title>Draw Polygons on Me!</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <button class='submit'>View Coordinates</button>
+    <div id="map"></div>
+  </body>
+
+  <script src="./map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY_HERE>&libraries=places&callback=initAutocomplete"
+  async defer></script>
+
+</html>
