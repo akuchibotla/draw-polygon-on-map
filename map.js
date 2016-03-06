@@ -100,5 +100,9 @@ function markersToCoords() {
 }
 
 document.getElementsByTagName('button')[0].addEventListener("click", function() {
-	alert(markersToCoords());
+	var displayCoords = window.open("", "MsgWindow", "width=200, height=100");
+	var coords = markersToCoords();
+	for(var i = 0; i < coords.length; i++) {
+		displayCoords.document.write("{lat:" + coords[i].lat().toString() + ", lng:" + + coords[i].lng().toString() + "}");
+	}
 });
